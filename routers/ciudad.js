@@ -32,7 +32,7 @@ router.get("/departamentonombre", [
     check('departamento', "El nombre del departamento es requerido")
 ], buscarDepartamentoNombreGet)
 
-
+    
 router.get("/:Ciudad", [
     validarCampos
 ], buscarCiudadNombreGet)

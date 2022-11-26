@@ -49,7 +49,7 @@ class Server {
         this.app.use(express.json())
         this.app.use(cors())
         this.conectarBd()
-        // this.app.use(express.static())
+        this.app.use(express.static('public'))
     }
 
     escuchar() {
